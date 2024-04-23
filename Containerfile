@@ -71,11 +71,6 @@ RUN pacman -S \
         words \
         xorg-xauth \
         zip \
-        mesa \
-        opengl-driver \
-        vulkan-intel \
-        vte-common \
-        vulkan-radeon \
         --noconfirm
 
 # Add paru and install AUR packages
@@ -87,8 +82,8 @@ RUN git clone https://aur.archlinux.org/paru-bin.git --single-branch && \
     cd .. && \
     rm -drf paru-bin && \
     paru -S \
-        aur/xcursor-breeze5 \
-        aur/adw-gtk3 \
+        aur/visual-studio-code-bin \
+        aur/stacer-bin \
         --noconfirm
 USER root
 WORKDIR /
