@@ -122,7 +122,6 @@ RUN git clone https://aur.archlinux.org/paru-bin.git --single-branch && \
         aur/visual-studio-code-bin \
         aur/stacer-bin \
         aur/nerd-fonts-git \
-        aur/qtscrcpy \
         aur/guiscrcpy \
         --noconfirm
 USER root
