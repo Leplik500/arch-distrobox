@@ -71,6 +71,43 @@ RUN pacman -S \
         words \
         xorg-xauth \
         zip \
+        git \
+        zsh \
+        vim \
+        tmux \
+        doxygen \
+        bubblewrap \
+        curl \
+        icoutils \
+        tar \
+        wget \
+        cabextract \
+        wireguard-tools \
+        lldb \
+        zstd \
+        gdb \
+        valgrind \
+        micro \
+        python-pip \
+        fish \
+        npm \
+        python-pipx \
+        ranger \
+        highlight \
+        mediainfo \
+        cmatrix \
+        isomd5sum \
+        base-devel \
+        thunar \
+        fail2ban \
+        xclip \
+        ccache \
+        gnu-netcat \
+        fish \
+        npm \
+        make \
+        cmake \
+        
         --noconfirm
 
 # Add paru and install AUR packages
