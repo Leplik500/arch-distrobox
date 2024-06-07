@@ -15,14 +15,6 @@ RUN sed -i 's/#Color/Color/g' /etc/pacman.conf && \
     echo "build ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     echo "root ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-# Distrobox Integration
-USER build
-WORKDIR /home/build
-RUN git clone https://github.com/KyleGospo/xdg-utils-distrobox-arch.git --single-branch && \
-    cd xdg-utils-distrobox-arch/trunk && \
-    makepkg -si --noconfirm && \
-    cd ../.. && \
-    rm -drf xdg-utils-distrobox-arch
 USER root
 WORKDIR /
 RUN git clone https://github.com/89luca89/distrobox.git --single-branch /tmp/distrobox && \
