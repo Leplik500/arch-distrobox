@@ -112,7 +112,6 @@ RUN git clone https://aur.archlinux.org/paru-bin.git --single-branch && \
     cd .. && \
     rm -drf paru-bin && \
     paru -S \
-        aur/visual-studio-code-bin \
         aur/stacer-bin \
         --noconfirm
 USER root
