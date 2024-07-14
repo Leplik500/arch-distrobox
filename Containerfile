@@ -67,7 +67,6 @@ RUN pacman -S \
         zsh \
         vim \
         tmux \
-        doxygen \
         bubblewrap \
         curl \
         icoutils \
