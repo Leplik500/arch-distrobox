@@ -99,8 +99,6 @@ RUN pacman -S \
         npm \
         make \
         cmake \
-        rhythmbox \
-        qbittorrent \
         --noconfirm
 
 # Add paru and install AUR packages
