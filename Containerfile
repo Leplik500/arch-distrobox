@@ -26,6 +26,9 @@ RUN git clone https://github.com/89luca89/distrobox.git --single-branch /tmp/dis
 
 # Install packages Distrobox adds automatically, this speeds up first launch
 RUN pacman -S \
+        neofetch \
+        gif2png \
+        starship \
         bash-completion \
         bc \
         curl \
