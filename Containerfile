@@ -26,6 +26,8 @@ RUN git clone https://github.com/89luca89/distrobox.git --single-branch /tmp/dis
 
 # Install packages Distrobox adds automatically, this speeds up first launch
 RUN pacman -S \
+        zsh-autosuggestions \
+        zsh-syntax-highlighting \
         neofetch \
         gif2png \
         starship \
@@ -112,7 +114,7 @@ RUN git clone https://aur.archlinux.org/paru-bin.git --single-branch && \
     cd .. && \
     rm -drf paru-bin && \
     paru -S \
-        aur/stacer-bin \
+        aur/oh-my-zsh-git \
         --noconfirm
 USER root
 WORKDIR /
